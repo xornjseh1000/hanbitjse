@@ -31,7 +31,7 @@ public class Avg3 {
 		//------------------변수 선언부, 준비 , 초기화(init) ------------------
 		Scanner scanner = new Scanner(System.in);
 		String name, result = "";
-		int kor = 0, eng = 0, mat = 0, total = 0, avg = 0;
+		int kor = 0, eng = 0, mat = 0, total = 0,avg = 0 ;
 		//------------------연산부 (알고리즘) ----------------------------------
 		System.out.println("이름을 입력하세요");
 		name = scanner.next();
@@ -56,29 +56,33 @@ public class Avg3 {
 		total = kor + eng + mat;
 		avg = total / 3;
 		
-		
-		if (avg >= 90) {
-			result = "A";
-			
-			
-		} else if (avg >= 80) {
+		switch (avg/10) {
+		case 9:
+			 result = "A";
+			break;
+		case 8:
 			result = "B";
-
-		}else if (avg >= 70) {
+			break;
+		case 7:
 			result = "C";
-
-		}
-		else if (avg >= 60) {
+			break;
+		case 6:
 			result = "D";
-
-		}
-		else if (avg >= 50) {
+			break;
+		case 5:
 			result = "E";
-
-		}else  {
+			break;
+			
+			
+		default:
 			result = "F";
-
+			break;
 		}
+		
+		
+		
+		
+		
 
 
 		

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package branch;
+package exam;
 
 import java.util.Scanner;
 
@@ -11,11 +11,11 @@ import java.util.Scanner;
  * @file   :MonthEnd.java
  * @story  :
  */
-public class MonthEnd {
+public class MonthEnd2 {
 	/**
-	 * 년  월 을 입력하면 말일이 몇일인지 알려주는
-	 * 프로그램을 만들어 주세요.
-	 * 단, 2월은 29일 이고 나머지 해는 28일로 마감입니다
+	 * 월을 입력하면 말일이 몇일인지 알려주는
+	 * 프로그램.
+	 * 단, 2월은 29일로 한정함.
 	 * 1~12를 벗어난 숫자를 입력하면
 	 * 잘못된 입력값입니다 라고 뜬다.
 	 * */
@@ -25,8 +25,6 @@ public class MonthEnd {
 		int  day = 0;
 		String mon;
 		//--------------------------------------op
-		System.out.println("년을 입력하세요. (예: 2016-2)");
-		int year=2016;
 		System.out.println("월을 입력하세요.");
 		mon = scanner.next();
 		

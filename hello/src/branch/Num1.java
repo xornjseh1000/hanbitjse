@@ -3,6 +3,8 @@
  */
 package branch;
 
+import java.util.Scanner;
+
 /**
  * @date   :2016. 6. 9.
  * @author :김동혁
@@ -31,4 +33,30 @@ public class Num1 {
 	 * .
 	 * ======
 	 * */
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int avg1 = 0, avg2 = 0, avg3=0;
+		String name1="",name2 ="", name3="";
+		
+		System.out.println("이름을 입력하시오");
+		name1 = scanner.nextLine();
+		System.out.println("평균을 입력하시오");
+		avg1 = scanner.nextInt();
+		System.out.println("이름을 입력하시오");
+		name2 = scanner.nextLine();
+		System.out.println("평균을 입력하시오");
+		avg2 = scanner.nextInt();
+		System.out.println("이름을 입력하시오");
+		name3 = scanner.nextLine();
+		System.out.println("평균을 입력하시오");
+		avg3 = scanner.nextInt();
+		
+		if (avg1 > avg2 && avg1 > avg3) {
+			System.out.println("1등 홍길동");
+		} else if(avg2 > avg3 && avg2 > avg1){
+			System.out.println("1등 김유신");
+		} else if(avg3 > avg1 && avg3 > avg1);
+		
+		
+	}
 }

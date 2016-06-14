@@ -18,6 +18,7 @@ public class Controller {
 		String menu="";
 		Scanner scanner = new Scanner(System.in);
 		Calc calc = new Calc();
+		Kaup kaup = new Kaup();
 		int i = 0;
 		while (true) {
 			menu = JOptionPane.showInputDialog("1.계산기 2,카우푸 3,년월말구하기 0,종료");
@@ -32,7 +33,11 @@ public class Controller {
 				break;
 			
 			case "2":
-				kaup(scanner);
+				System.out.println("이름 ?");
+				System.out.println("키 ?");
+				System.out.println("몸무게 ?");
+				System.out.println(kaup.execute(scanner.next(), scanner.nextDouble(), scanner.nextDouble()));
+				
 				break;
 		
 			case "3":
